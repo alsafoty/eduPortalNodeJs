@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Course = require("D:/_SS/Web/Node.js/eduportal/models/course.js");
+const Course = require("../../models/course");
 const jwt = require("jsonwebtoken");
 
 const dbURI =

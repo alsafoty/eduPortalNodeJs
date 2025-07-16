@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const User = require("D:/_SS/Web/Node.js/eduportal/models/user.js");
+const User = require("../../models/user");
 const dbURI =
   "mongodb+srv://ahmad:edu1234@eduportal.pt2ytbm.mongodb.net/eduportal?retryWrites=true&w=majority&appName=EduPortal";
 const router = express.Router();

@@ -1,12 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
 
 const app = express();
-const User = require("../models/user");
-const Course = require("../models/course");
+
 const dbURI =
   "mongodb+srv://ahmad:edu1234@eduportal.pt2ytbm.mongodb.net/eduportal?retryWrites=true&w=majority&appName=EduPortal";
 
