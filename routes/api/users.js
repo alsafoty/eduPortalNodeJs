@@ -112,7 +112,8 @@ router.get("/", verifyToken, (req, res) => {
 // Get a user by ID
 router.get("/:id", verifyToken, (req, res) => {
   const id = req.params.id;
-  User.findOne({ id: id })
+  const username = req.user.username;
+  User.findOne({ username: username })
     .then((result) => {
       res.send(result);
     })
